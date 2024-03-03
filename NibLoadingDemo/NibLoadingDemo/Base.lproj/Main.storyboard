@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NibLoadingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAT-cm-784">
+                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <state key="normal" title="Add Person"/>
+                                <connections>
+                                    <action selector="addPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1E-V8-rIi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-9d-voc">
+                                <rect key="frame" x="20" y="82" width="374" height="780"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="leading" secondItem="QAD-9d-voc" secondAttribute="leading" id="2Lt-gj-ufk"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="top" secondItem="vAT-cm-784" secondAttribute="bottom" constant="8" id="Kkb-Cx-LIy"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ewl-DK-CBt"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="trailing" secondItem="QAD-9d-voc" secondAttribute="trailing" id="fQN-hC-qkg"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gYb-pF-wb6"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="k1t-4S-yx6"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tbB-ub-FFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="QAD-9d-voc" id="Xvl-IO-spy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

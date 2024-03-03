@@ -4,3 +4,5 @@ This is a repository containing several applications that serve as demos for how
 ## NibLoadingDemo
 Demonstrates how to create an application screen using Nibs (aka 'xib' files).
 
+## ControlSink
+Demonstrates a number of the different iOS controls.

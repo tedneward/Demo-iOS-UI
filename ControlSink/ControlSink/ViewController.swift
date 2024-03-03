@@ -19,7 +19,7 @@ class ViewController: UIViewController {
       case 0: which = "First"
       case 1: which = "Second"
       case 2: which = "Third"
-      default: which = "?????"
+      default: which = "?????" // How could this be?
     }
     message(title: "You changed to want", message: which)
   }

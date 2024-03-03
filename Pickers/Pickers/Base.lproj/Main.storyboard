@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zam-hb-Inn">
+                                <rect key="frame" x="20" y="291" width="390" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="kzn-Mr-ihP"/>
+                                </constraints>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0z2-j1-Gbb">
+                                <rect key="frame" x="20" y="67" width="390" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="c41-zJ-VWh"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="datePickerPicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="miY-cV-Us0"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0z2-j1-Gbb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="D8d-6B-VUW"/>
+                            <constraint firstAttribute="trailing" secondItem="zam-hb-Inn" secondAttribute="trailing" constant="20" symbolic="YES" id="IvA-hd-eDs"/>
+                            <constraint firstItem="zam-hb-Inn" firstAttribute="top" secondItem="0z2-j1-Gbb" secondAttribute="bottom" constant="8" symbolic="YES" id="PL4-hO-F5Z"/>
+                            <constraint firstItem="zam-hb-Inn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="X7S-tG-vPf"/>
+                            <constraint firstItem="0z2-j1-Gbb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Xc5-eO-UAL"/>
+                            <constraint firstAttribute="trailing" secondItem="0z2-j1-Gbb" secondAttribute="trailing" constant="20" symbolic="YES" id="wwt-8e-xb5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="0z2-j1-Gbb" id="bnA-kR-5ap"/>
+                        <outlet property="stringPicker" destination="zam-hb-Inn" id="gll-gL-xaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FED441671DCC5CCB00BFEC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED441661DCC5CCB00BFEC50 /* AppDelegate.swift */; };
+		FED441691DCC5CCB00BFEC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED441681DCC5CCB00BFEC50 /* ViewController.swift */; };
+		FED4416C1DCC5CCB00BFEC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4416A1DCC5CCB00BFEC50 /* Main.storyboard */; };
+		FED4416E1DCC5CCB00BFEC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED4416D1DCC5CCB00BFEC50 /* Assets.xcassets */; };
+		FED441711DCC5CCB00BFEC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4416F1DCC5CCB00BFEC50 /* LaunchScreen.storyboard */; };
+		FED4417C1DCC5CCB00BFEC50 /* ControlSinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4417B1DCC5CCB00BFEC50 /* ControlSinkTests.swift */; };
+		FED441871DCC5CCB00BFEC50 /* ControlSinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED441861DCC5CCB00BFEC50 /* ControlSinkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FED441781DCC5CCB00BFEC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED4415B1DCC5CCB00BFEC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED441621DCC5CCB00BFEC50;
+			remoteInfo = ControlSink;
+		};
+		FED441831DCC5CCB00BFEC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED4415B1DCC5CCB00BFEC50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED441621DCC5CCB00BFEC50;
+			remoteInfo = ControlSink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FED441631DCC5CCB00BFEC50 /* ControlSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED441661DCC5CCB00BFEC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FED441681DCC5CCB00BFEC50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FED4416B1DCC5CCB00BFEC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FED4416D1DCC5CCB00BFEC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FED441701DCC5CCB00BFEC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FED441721DCC5CCB00BFEC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED441771DCC5CCB00BFEC50 /* ControlSinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlSinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED4417B1DCC5CCB00BFEC50 /* ControlSinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSinkTests.swift; sourceTree = "<group>"; };
+		FED4417D1DCC5CCB00BFEC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED441821DCC5CCB00BFEC50 /* ControlSinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlSinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED441861DCC5CCB00BFEC50 /* ControlSinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSinkUITests.swift; sourceTree = "<group>"; };
+		FED441881DCC5CCB00BFEC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED441601DCC5CCB00BFEC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED441741DCC5CCB00BFEC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4417F1DCC5CCB00BFEC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED4415A1DCC5CCA00BFEC50 = {
+			isa = PBXGroup;
+			children = (
+				FED441651DCC5CCB00BFEC50 /* ControlSink */,
+				FED4417A1DCC5CCB00BFEC50 /* ControlSinkTests */,
+				FED441851DCC5CCB00BFEC50 /* ControlSinkUITests */,
+				FED441641DCC5CCB00BFEC50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FED441641DCC5CCB00BFEC50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED441631DCC5CCB00BFEC50 /* ControlSink.app */,
+				FED441771DCC5CCB00BFEC50 /* ControlSinkTests.xctest */,
+				FED441821DCC5CCB00BFEC50 /* ControlSinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED441651DCC5CCB00BFEC50 /* ControlSink */ = {
+			isa = PBXGroup;
+			children = (
+				FED441661DCC5CCB00BFEC50 /* AppDelegate.swift */,
+				FED441681DCC5CCB00BFEC50 /* ViewController.swift */,
+				FED4416A1DCC5CCB00BFEC50 /* Main.storyboard */,
+				FED4416D1DCC5CCB00BFEC50 /* Assets.xcassets */,
+				FED4416F1DCC5CCB00BFEC50 /* LaunchScreen.storyboard */,
+				FED441721DCC5CCB00BFEC50 /* Info.plist */,
+			);
+			path = ControlSink;
+			sourceTree = "<group>";
+		};
+		FED4417A1DCC5CCB00BFEC50 /* ControlSinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FED4417B1DCC5CCB00BFEC50 /* ControlSinkTests.swift */,
+				FED4417D1DCC5CCB00BFEC50 /* Info.plist */,
+			);
+			path = ControlSinkTests;
+			sourceTree = "<group>";
+		};
+		FED441851DCC5CCB00BFEC50 /* ControlSinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FED441861DCC5CCB00BFEC50 /* ControlSinkUITests.swift */,
+				FED441881DCC5CCB00BFEC50 /* Info.plist */,
+			);
+			path = ControlSinkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED441621DCC5CCB00BFEC50 /* ControlSink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED4418B1DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSink" */;
+			buildPhases = (
+				FED4415F1DCC5CCB00BFEC50 /* Sources */,
+				FED441601DCC5CCB00BFEC50 /* Frameworks */,
+				FED441611DCC5CCB00BFEC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControlSink;
+			productName = ControlSink;
+			productReference = FED441631DCC5CCB00BFEC50 /* ControlSink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FED441761DCC5CCB00BFEC50 /* ControlSinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED4418E1DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSinkTests" */;
+			buildPhases = (
+				FED441731DCC5CCB00BFEC50 /* Sources */,
+				FED441741DCC5CCB00BFEC50 /* Frameworks */,
+				FED441751DCC5CCB00BFEC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED441791DCC5CCB00BFEC50 /* PBXTargetDependency */,
+			);
+			name = ControlSinkTests;
+			productName = ControlSinkTests;
+			productReference = FED441771DCC5CCB00BFEC50 /* ControlSinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FED441811DCC5CCB00BFEC50 /* ControlSinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED441911DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSinkUITests" */;
+			buildPhases = (
+				FED4417E1DCC5CCB00BFEC50 /* Sources */,
+				FED4417F1DCC5CCB00BFEC50 /* Frameworks */,
+				FED441801DCC5CCB00BFEC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED441841DCC5CCB00BFEC50 /* PBXTargetDependency */,
+			);
+			name = ControlSinkUITests;
+			productName = ControlSinkUITests;
+			productReference = FED441821DCC5CCB00BFEC50 /* ControlSinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED4415B1DCC5CCB00BFEC50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = "Ted Neward";
+				TargetAttributes = {
+					FED441621DCC5CCB00BFEC50 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					FED441761DCC5CCB00BFEC50 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FED441621DCC5CCB00BFEC50;
+					};
+					FED441811DCC5CCB00BFEC50 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FED441621DCC5CCB00BFEC50;
+					};
+				};
+			};
+			buildConfigurationList = FED4415E1DCC5CCB00BFEC50 /* Build configuration list for PBXProject "ControlSink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FED4415A1DCC5CCA00BFEC50;
+			productRefGroup = FED441641DCC5CCB00BFEC50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED441621DCC5CCB00BFEC50 /* ControlSink */,
+				FED441761DCC5CCB00BFEC50 /* ControlSinkTests */,
+				FED441811DCC5CCB00BFEC50 /* ControlSinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED441611DCC5CCB00BFEC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED441711DCC5CCB00BFEC50 /* LaunchScreen.storyboard in Resources */,
+				FED4416E1DCC5CCB00BFEC50 /* Assets.xcassets in Resources */,
+				FED4416C1DCC5CCB00BFEC50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED441751DCC5CCB00BFEC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED441801DCC5CCB00BFEC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED4415F1DCC5CCB00BFEC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED441691DCC5CCB00BFEC50 /* ViewController.swift in Sources */,
+				FED441671DCC5CCB00BFEC50 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED441731DCC5CCB00BFEC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED4417C1DCC5CCB00BFEC50 /* ControlSinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4417E1DCC5CCB00BFEC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED441871DCC5CCB00BFEC50 /* ControlSinkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FED441791DCC5CCB00BFEC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED441621DCC5CCB00BFEC50 /* ControlSink */;
+			targetProxy = FED441781DCC5CCB00BFEC50 /* PBXContainerItemProxy */;
+		};
+		FED441841DCC5CCB00BFEC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED441621DCC5CCB00BFEC50 /* ControlSink */;
+			targetProxy = FED441831DCC5CCB00BFEC50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FED4416A1DCC5CCB00BFEC50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED4416B1DCC5CCB00BFEC50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FED4416F1DCC5CCB00BFEC50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED441701DCC5CCB00BFEC50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED441891DCC5CCB00BFEC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FED4418A1DCC5CCB00BFEC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED4418C1DCC5CCB00BFEC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ControlSink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FED4418D1DCC5CCB00BFEC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ControlSink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FED4418F1DCC5CCB00BFEC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ControlSinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ControlSink.app/ControlSink";
+			};
+			name = Debug;
+		};
+		FED441901DCC5CCB00BFEC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ControlSinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ControlSink.app/ControlSink";
+			};
+			name = Release;
+		};
+		FED441921DCC5CCB00BFEC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ControlSinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ControlSink;
+			};
+			name = Debug;
+		};
+		FED441931DCC5CCB00BFEC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ControlSinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tedneward.demo.ControlSinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ControlSink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED4415E1DCC5CCB00BFEC50 /* Build configuration list for PBXProject "ControlSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED441891DCC5CCB00BFEC50 /* Debug */,
+				FED4418A1DCC5CCB00BFEC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED4418B1DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4418C1DCC5CCB00BFEC50 /* Debug */,
+				FED4418D1DCC5CCB00BFEC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED4418E1DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4418F1DCC5CCB00BFEC50 /* Debug */,
+				FED441901DCC5CCB00BFEC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED441911DCC5CCB00BFEC50 /* Build configuration list for PBXNativeTarget "ControlSinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED441921DCC5CCB00BFEC50 /* Debug */,
+				FED441931DCC5CCB00BFEC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FED4415B1DCC5CCB00BFEC50 /* Project object */;
+}

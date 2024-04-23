@@ -16,5 +16,8 @@ Demonstrates how to use a standard Date picker as well as how to create a custom
 ## PinchZoom
 Demonstrates how to use gesture recognizers in iOS--each of the different kind of gesture recognizers is instantiated and registered with the main view, but in order to make it clear which one is being triggered, it displays some "debug text" at the bottom.
 
+## TableViews
+Demonstrates some UITableView functionality. Currently consists of one child project, TableFun, but I'm probably going to add a few more (eventually).
+
 ## ViewSwitcher
 An application that manages a child ViewController in the body of the canvas "by hand", activated when the user pushes a Toolbar button at the bottom. Also (briefly) displays how to use the "block animation" facilities of iOS, which replace the (deprecated but not removed, as of iOS 17) "beginAnimations/commitAnimations" API.

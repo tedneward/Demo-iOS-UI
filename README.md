@@ -4,8 +4,17 @@ This is a repository containing several applications that serve as demos for how
 ## ActivitySpy
 An application that tries to "spy" on everything that goes on in an iOS application. Intended as a way to get a feel for the lifecycle of various components in an iOS application.
 
+## AlertDemo
+An application that shows how to do a simple UIAlertController. (TODO: Expand this to show off different flavors/variations.)
+
+## Appearance
+Demos how to set global appearance settings on UIKit constructs. (TODO: Expand this.)
+
 ## ControlSink
 Demonstrates a number of the different iOS controls.
+
+## GestureFun
+Show how to install different gesture recognizers. (TODO: Compare to PinchZoom, make sure there's no duplication here.)
 
 ## NibLoadingDemo
 Demonstrates how to create an application screen using Nibs (aka 'xib' files).

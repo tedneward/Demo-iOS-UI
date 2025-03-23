@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ChangingScenes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ClC-Ch-orv">
+                                <rect key="frame" x="0.0" y="40" width="393" height="802"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Direct&quot; uses a direct button-to-SecondViewController drag action to the SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sni-Q4-3UR">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="100.33333333333333"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emh-Mf-2ir">
+                                        <rect key="frame" x="0.0" y="100.33333333333334" width="393" height="100.33333333333334"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Direct"/>
+                                        <connections>
+                                            <segue destination="5hh-7X-CUC" kind="show" id="616-uR-jNL"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Segue&quot; a segue to transition over to the SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt2-tK-bOl">
+                                        <rect key="frame" x="0.0" y="200.66666666666666" width="393" height="99.999999999999972"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxB-4M-eio">
+                                        <rect key="frame" x="0.0" y="300.66666666666669" width="393" height="100.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Segue"/>
+                                        <connections>
+                                            <action selector="btnSeguePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBQ-2K-8V8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-Kv-5CL">
+                                        <rect key="frame" x="0.0" y="401" width="393" height="100.33333333333331"/>
+                                        <string key="text">"Segue w/Data" uses a segue to transition over to the SecondViewController but also uses the lifecycle methods to pass data through the segue</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zN-Xv-tPK">
+                                        <rect key="frame" x="0.0" y="501.33333333333331" width="393" height="100.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Segue w/Data"/>
+                                        <connections>
+                                            <action selector="btnSegueWithDataPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvd-BZ-eCA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Show&quot; invokes the SecondViewController directly via show()" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgY-u6-Jpe">
+                                        <rect key="frame" x="0.0" y="601.66666666666663" width="393" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-qk-tyd">
+                                        <rect key="frame" x="0.0" y="701.66666666666663" width="393" height="100.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ClC-Ch-orv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="506-4r-G4b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ClC-Ch-orv" secondAttribute="bottom" id="FQu-I7-rOA"/>
+                            <constraint firstItem="ClC-Ch-orv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="FhL-iY-uVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ClC-Ch-orv" secondAttribute="trailing" id="Hab-ma-mVm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4X9-YK-JP9"/>
+                    <connections>
+                        <segue destination="5hh-7X-CUC" kind="showDetail" identifier="StockMainToSecond" id="IUP-eC-A8c"/>
+                        <segue destination="5hh-7X-CUC" kind="showDetail" identifier="CustomMainToSecond" customClass="CustomMainToSecond" customModule="ChangingScenes" customModuleProvider="target" id="fcf-ac-4q4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="6"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="KVB-6R-jQy">
+            <objects>
+                <viewController id="5hh-7X-CUC" customClass="SecondViewController" customModule="ChangingScenes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPw-eN-iOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m4S-cS-IFG">
+                                <rect key="frame" x="16" y="40" width="361" height="782"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[[SHOULD NEVER SEE THIS]]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1g-pO-Be5">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="111.66666666666667"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Dismiss&quot; closes the SecondViewController using the dismiss(self) call" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af5-Wb-7yG">
+                                        <rect key="frame" x="0.0" y="111.66666666666666" width="361" height="111.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGU-Qn-Xgt">
+                                        <rect key="frame" x="0.0" y="223.33333333333329" width="361" height="111.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="btnDismissPressed:" destination="5hh-7X-CUC" eventType="touchUpInside" id="zLm-Vt-nxN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Direct Back&quot; uses a direct button-to-MainViewController to take us back to the MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvI-wV-X99">
+                                        <rect key="frame" x="0.0" y="335" width="361" height="112"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-i9-Zpl">
+                                        <rect key="frame" x="0.0" y="447" width="361" height="111.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Direct Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="q4j-Qn-p91"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Unwind&quot; tries to unwind the segue that brought us here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-xl-NvA">
+                                        <rect key="frame" x="0.0" y="558.66666666666663" width="361" height="111.66666666666663"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jg-Ir-rHD">
+                                        <rect key="frame" x="0.0" y="670.33333333333337" width="361" height="111.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unwind"/>
+                                        <connections>
+                                            <action selector="btnUnwindPressed:" destination="5hh-7X-CUC" eventType="touchUpInside" id="kXZ-TT-fFX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Lm-KK-ZT2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m4S-cS-IFG" firstAttribute="leading" secondItem="0Lm-KK-ZT2" secondAttribute="leading" constant="16" id="3n6-Ex-iwL"/>
+                            <constraint firstItem="0Lm-KK-ZT2" firstAttribute="trailing" secondItem="m4S-cS-IFG" secondAttribute="trailing" constant="16" id="iLp-Lx-RGN"/>
+                            <constraint firstItem="0Lm-KK-ZT2" firstAttribute="bottom" secondItem="m4S-cS-IFG" secondAttribute="bottom" constant="20" id="wry-z0-7W0"/>
+                            <constraint firstItem="m4S-cS-IFG" firstAttribute="top" secondItem="0Lm-KK-ZT2" secondAttribute="top" constant="40" id="yb0-lM-PMZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zFE-5d-9pL"/>
+                    <connections>
+                        <outlet property="lblSourceData" destination="z1g-pO-Be5" id="Rm8-x0-gme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8G-Re-GCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="7"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="616-uR-jNL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

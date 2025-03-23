@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waF-eD-9Nf">
+                                <rect key="frame" x="180" y="373.66666666666669" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Uhh-Xu-Vcv"/>
+                                    <constraint firstAttribute="height" constant="29.670000000000002" id="Xnk-Kw-adI"/>
+                                </constraints>
+                                <state key="normal" title="Up"/>
+                                <connections>
+                                    <action selector="changeDirectionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRd-39-jHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5d6-2t-1Ei">
+                                <rect key="frame" x="175.66666666666666" y="440.66666666666669" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9jc-by-A4K"/>
+                                    <constraint firstAttribute="width" constant="39" id="cvo-ei-X0W"/>
+                                </constraints>
+                                <state key="normal" title="Down"/>
+                                <connections>
+                                    <action selector="changeDirectionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ncu-b5-WSX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW0-Hv-i2n">
+                                <rect key="frame" x="243" y="407" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Aka-h8-hV9"/>
+                                    <constraint firstAttribute="height" constant="30" id="hVI-v2-6yD"/>
+                                </constraints>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="changeDirectionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLG-z8-XVp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9t-WZ-pL0">
+                                <rect key="frame" x="116.33333333333333" y="407" width="30.666666666666671" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30.670000000000002" id="13m-DP-07L"/>
+                                    <constraint firstAttribute="height" constant="30" id="KER-yc-f78"/>
+                                </constraints>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="changeDirectionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVV-Es-C2u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le4-8M-tQP">
+                                <rect key="frame" x="155" y="411.66666666666669" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4F1-rQ-VnO"/>
+                                    <constraint firstAttribute="width" constant="80" id="WrV-yO-aDs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYI-oD-Ezp">
+                                <rect key="frame" x="16" y="583" width="358" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="227" id="9Eg-Nn-Y6m"/>
+                                    <constraint firstAttribute="height" constant="227" id="oTR-7d-Awm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sYI-oD-Ezp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5a9-zw-FOe"/>
+                            <constraint firstItem="le4-8M-tQP" firstAttribute="top" secondItem="waF-eD-9Nf" secondAttribute="bottom" constant="8" symbolic="YES" id="9It-7D-2Mr"/>
+                            <constraint firstItem="waF-eD-9Nf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EdW-gs-Ofo"/>
+                            <constraint firstItem="le4-8M-tQP" firstAttribute="leading" secondItem="L9t-WZ-pL0" secondAttribute="trailing" constant="8" symbolic="YES" id="OeE-7c-30c"/>
+                            <constraint firstItem="5d6-2t-1Ei" firstAttribute="top" secondItem="le4-8M-tQP" secondAttribute="bottom" constant="8" symbolic="YES" id="SXo-to-hEZ"/>
+                            <constraint firstItem="L9t-WZ-pL0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zbj-Jt-ezp"/>
+                            <constraint firstItem="5d6-2t-1Ei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWB-RG-RwR"/>
+                            <constraint firstItem="sW0-Hv-i2n" firstAttribute="leading" secondItem="le4-8M-tQP" secondAttribute="trailing" constant="8" symbolic="YES" id="bL5-Fm-iv5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sYI-oD-Ezp" secondAttribute="trailing" constant="16" id="fy4-X2-nHC"/>
+                            <constraint firstItem="le4-8M-tQP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="inN-i5-oRG"/>
+                            <constraint firstItem="sYI-oD-Ezp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="isu-Nf-w9n"/>
+                            <constraint firstItem="sW0-Hv-i2n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t0i-zZ-EoQ"/>
+                            <constraint firstItem="le4-8M-tQP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yhn-5r-Tih"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="le4-8M-tQP" id="LYh-B9-bsE"/>
+                        <outlet property="statusLabel" destination="sYI-oD-Ezp" id="aYL-Od-N1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="132.93838862559241"/>
+        </scene>
+    </scenes>
+</document>

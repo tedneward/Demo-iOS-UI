@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYx-Tn-obl">
+                                <rect key="frame" x="70" y="118" width="279" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Start!"/>
+                                <connections>
+                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FNE-pX-0aE"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dAI-uK-Xcl">
+                                <rect key="frame" x="357" y="125" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-1k-Uue">
+                                <rect key="frame" x="16" y="118" width="46" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71h-Gi-8vr">
+                                <rect key="frame" x="16" y="160" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QaI-lQ-D1B">
+                                <rect key="frame" x="70" y="167" width="307" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="71h-Gi-8vr" firstAttribute="centerY" secondItem="QaI-lQ-D1B" secondAttribute="centerY" id="1Sf-1I-Qim"/>
+                            <constraint firstItem="QaI-lQ-D1B" firstAttribute="top" secondItem="QYx-Tn-obl" secondAttribute="bottom" constant="15" id="7qZ-Ac-wEf"/>
+                            <constraint firstItem="QaI-lQ-D1B" firstAttribute="leading" secondItem="71h-Gi-8vr" secondAttribute="trailing" constant="12" id="DDq-ok-IPz"/>
+                            <constraint firstItem="dAI-uK-Xcl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="EWo-73-DOv"/>
+                            <constraint firstItem="QYx-Tn-obl" firstAttribute="leading" secondItem="QaI-lQ-D1B" secondAttribute="leading" id="F5C-Md-Xsg"/>
+                            <constraint firstItem="3sT-1k-Uue" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FVP-lg-En7"/>
+                            <constraint firstItem="dAI-uK-Xcl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gig-Lr-2p7"/>
+                            <constraint firstItem="3sT-1k-Uue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Iba-gw-0vS"/>
+                            <constraint firstItem="3sT-1k-Uue" firstAttribute="centerY" secondItem="QYx-Tn-obl" secondAttribute="centerY" id="OiH-iL-QKk"/>
+                            <constraint firstItem="71h-Gi-8vr" firstAttribute="top" secondItem="3sT-1k-Uue" secondAttribute="bottom" constant="8" id="PkB-xj-FM1"/>
+                            <constraint firstItem="dAI-uK-Xcl" firstAttribute="trailing" secondItem="QaI-lQ-D1B" secondAttribute="trailing" id="a92-Cx-7VA"/>
+                            <constraint firstItem="dAI-uK-Xcl" firstAttribute="leading" secondItem="QYx-Tn-obl" secondAttribute="trailing" constant="8" id="aNt-vx-QjH"/>
+                            <constraint firstItem="QYx-Tn-obl" firstAttribute="leading" secondItem="3sT-1k-Uue" secondAttribute="trailing" constant="8" id="cfm-Rn-08o"/>
+                            <constraint firstItem="3sT-1k-Uue" firstAttribute="leading" secondItem="71h-Gi-8vr" secondAttribute="leading" id="d0u-VK-usr"/>
+                            <constraint firstItem="QYx-Tn-obl" firstAttribute="centerY" secondItem="dAI-uK-Xcl" secondAttribute="centerY" id="rd8-mh-fNw"/>
+                            <constraint firstItem="3sT-1k-Uue" firstAttribute="top" secondItem="QYx-Tn-obl" secondAttribute="top" id="wwF-7c-rPr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnStartStop" destination="QYx-Tn-obl" id="RuU-bu-16w"/>
+                        <outlet property="edtParts" destination="3sT-1k-Uue" id="cKs-iN-Twi"/>
+                        <outlet property="lblCount" destination="71h-Gi-8vr" id="LNP-IS-42E"/>
+                        <outlet property="progress" destination="QaI-lQ-D1B" id="YWn-m3-eNU"/>
+                        <outlet property="spinner" destination="dAI-uK-Xcl" id="yJ6-lu-VLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

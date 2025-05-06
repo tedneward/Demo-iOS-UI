@@ -28,6 +28,9 @@ Demonstrates how to use a standard Date picker as well as how to create a custom
 ## PinchZoom
 Demonstrates how to use gesture recognizers in iOS--each of the different kind of gesture recognizers is instantiated and registered with the main view, but in order to make it clear which one is being triggered, it displays some "debug text" at the bottom.
 
+## ProgressApp
+Showing how to track progress and offer up cancellation of a long-running task. 
+
 ## SleepyApp
 What happens when you do a `Thread.sleep` (simulating doing some intensive work) in your event-handler method? You freeze up your UI, that's what. How do you avoid doing that? Use GCD.
 

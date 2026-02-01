@@ -22,52 +22,49 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    var nameAgeArray = [
+        ("Ted", 50),
+        ("Charlotte", 39),
+        ("Angel", 22),
+        ("Monte", 18),
+        ("Jessica", 18)
+    ]
+    var nextPersonIndex: Int = 0
+
+    // {{## START addPerson ##}}
     @IBAction func addPerson(_ sender: Any) {
-        NSLog("Add Person")
-
-        // Get a random name and age from out of nowhere
-        let name = "Ted"
-        let age = 50
-
-        /* Option 1: The Hard Way
-           Add a PersonPanel to the vertical center "the hard way":
-            - create the raw nib file (File | New | File... | under User Interface select View), add controls into it (horizontal stack view with two children, one label and one button
-            - instantiate the nib here using loadNibNamed(:owner) with an owner of nil since we want to do all the "wiring" up ourselves
-            - take the resulting view from the nib (which will be the horizontal stack view) and add it into the view hierarchy under the vertical stack view (self.contentView)
-            - wire up the button to print an NSLog()
-         */
-        /*
-        nameAgeArray.append((name, age))
-        NSLog("array: \(nameAgeArray)")
-        
         // Instantiate a PersonPanel from the XIB
-        let nib = Bundle.main.loadNibNamed("PersonPanel", owner: nil)
+        let nib = Bundle.main.loadNibNamed("PersonPanel", owner: self)
         let nibView = (nib?.first) as! UIView // this is the UIStackView
+        // {{## END addPerson ##}}
 
         NSLog("nibView has \(nibView.subviews.count) subviews") // 1 -- the UIStackView
         NSLog("nibView.subviews[0].subviews has \(nibView.subviews[0].subviews.count) subviews") // 2 -- the label and the button
 
+        // {{## START configureNibControls ##}}
+        // Find the label in the nib and set its text
         let nibLabel = nibView.subviews[0].subviews[0] as! UILabel
-        nibLabel.text = "\(name) : \(age)"
+        nibLabel.text = "\(nameAgeArray[nextPersonIndex].0) : \(nameAgeArray[nextPersonIndex].1)"
         
         // Wire up the nibButton to point to a function in this ViewController
         let nibButton = nibView.subviews[0].subviews[1] as! UIButton
-        nibButton.tag = nameAgeArray.count - 1 // this is our index into the nameAgeArray
+        nibButton.tag = nextPersonIndex
         nibButton.addTarget(self, action: #selector(happyBirthdayPushed(_:)), for: .touchUpInside)
-        
+        // {{## END configureNibControls ##}}
+
+        // {{## START addNibViews ##}}
         // Add the subview but use the "arranged" version so that it will be arranged according to the rules of a UIStackView
         contentView.addArrangedSubview(nibView)
-        // */
-        
-        /* Option 2: Create a custom UIView subclass to handle its own events */
-        let personPanel = PersonPanelView()
-        personPanel.data = (name, age)
-        contentView.addArrangedSubview(personPanel)
+        // {{## END addNibViews ##}}
+
+        // Bump the index so we can rotate through the arrays of people
+        nextPersonIndex += 1
+        if nextPersonIndex == (nameAgeArray.count) {
+            nextPersonIndex = 0
+        }
     }
     
-    // Option 1 supporting code
-    /*
-    var nameAgeArray : [(String, Int)] = [] // This is an array of (String, Int) tuples
+    // {{## START hostedButtonHandler ##}}
     @objc func happyBirthdayPushed(_ sender: UIButton) {
         // Go get the "tag" value associated with our button
         // Remember, that's our index into the nameAgeArray
@@ -77,6 +74,8 @@ class ViewController: UIViewController {
         var nameAgePair = nameAgeArray[index]
         nameAgePair.1 = nameAgePair.1 + 1
         nameAgeArray[index] = nameAgePair
+        // Could also one-liner this like so:
+        //nameAgeArray[index] = (nameAgeArray[index].0, nameAgeArray[index].1 + 1)
 
         // Go find our paired label by looking at the UIStackView's children and getting the first one; update it with the new ages
         let pairedLabel = sender.superview!.subviews[0] as! UILabel
@@ -84,7 +83,6 @@ class ViewController: UIViewController {
 
         NSLog("Happy Birthday, \(nameAgePair.0) you are now \(nameAgePair.1)")
     }
-    // */
-
+    // {{## END hostedButtonHandler ##}}
 }
 

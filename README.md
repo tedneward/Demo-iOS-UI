@@ -25,6 +25,9 @@ An example showing how to create controls by hand (i.e., without using Interface
 ## NibLoadingDemo
 Demonstrates how to create an application screen using Nibs (aka 'xib' files).
 
+## NibBasedView
+Demonstrates how to create a UIView-derived class that uses a nib for UI.
+
 ## Pickers
 Demonstrates how to use a standard Date picker as well as how to create a custom picker, which displays one of many options (colleges, in this case).
 

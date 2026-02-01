@@ -14,7 +14,6 @@
 		FEBAF5B22638FC2E0018373F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBAF5B12638FC2E0018373F /* Assets.xcassets */; };
 		FEBAF5B52638FC2E0018373F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBAF5B32638FC2E0018373F /* LaunchScreen.storyboard */; };
 		FEBAF5C5263900D20018373F /* PersonPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBAF5C4263900D10018373F /* PersonPanel.xib */; };
-		FEBAF5C926390F940018373F /* PersonPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBAF5C826390F940018373F /* PersonPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		FEBAF5B42638FC2E0018373F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEBAF5B62638FC2E0018373F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEBAF5C4263900D10018373F /* PersonPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonPanel.xib; sourceTree = "<group>"; };
-		FEBAF5C826390F940018373F /* PersonPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				FEBAF5A82638FC2E0018373F /* AppDelegate.swift */,
 				FEBAF5AA2638FC2E0018373F /* SceneDelegate.swift */,
 				FEBAF5AC2638FC2E0018373F /* ViewController.swift */,
-				FEBAF5C826390F940018373F /* PersonPanelView.swift */,
 				FEBAF5C4263900D10018373F /* PersonPanel.xib */,
 				FEBAF5AE2638FC2E0018373F /* Main.storyboard */,
 				FEBAF5B12638FC2E0018373F /* Assets.xcassets */,
@@ -146,7 +143,6 @@
 			files = (
 				FEBAF5AD2638FC2E0018373F /* ViewController.swift in Sources */,
 				FEBAF5A92638FC2E0018373F /* AppDelegate.swift in Sources */,
-				FEBAF5C926390F940018373F /* PersonPanelView.swift in Sources */,
 				FEBAF5AB2638FC2E0018373F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

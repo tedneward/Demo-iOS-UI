@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // {{## END viewDidLoad-1 ##}}
 
+    // {{## BEGIN viewDidLoad-4 ##}}
     // Do any additional setup after loading the view.
     let width : CGFloat = ((self.view.frame.width - 64) / 3).rounded()
     let height : CGFloat = ((self.view.frame.height - 64) / 3).rounded()
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
       }
     }
     print("coords \(coords)")
+    // {{## END viewDidLoad-4 ##}}
     
     // {{## BEGIN viewDidLoad-2 ##}}
     for num in 1...9 {

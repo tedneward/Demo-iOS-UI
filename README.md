@@ -19,6 +19,9 @@ Demonstrates a number of the different iOS controls.
 ## GestureFun
 Show how to install different gesture recognizers. (TODO: Compare to PinchZoom, make sure there's no duplication here.)
 
+## ManualUI
+An example showing how to create controls by hand (i.e., without using Interface Builder), and how to place them in different places on the screen. This example calculates the locations based on the size of the view attached as the root of the ViewController; in other scenarios, the locations might be based on the size of a UIView dropped into the storyboard for that UIViewController. (TODO: Demo that.)
+
 ## NibLoadingDemo
 Demonstrates how to create an application screen using Nibs (aka 'xib' files).
 
@@ -26,7 +29,7 @@ Demonstrates how to create an application screen using Nibs (aka 'xib' files).
 Demonstrates how to use a standard Date picker as well as how to create a custom picker, which displays one of many options (colleges, in this case).
 
 ## PinchZoom
-Demonstrates how to use gesture recognizers in iOS--each of the different kind of gesture recognizers is instantiated and registered with the main view, but in order to make it clear which one is being triggered, it displays some "debug text" at the bottom.
+Demonstrates how to use gesture recognizers in iOS--each of the different kind of gesture recognizers is instantiated and registered with the main view. In order to make it clear which one is being triggered, it displays some "debug text" at the bottom.
 
 ## ProgressApp
 Showing how to track progress and offer up cancellation of a long-running task. 

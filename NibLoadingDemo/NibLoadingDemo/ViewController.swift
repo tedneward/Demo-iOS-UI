@@ -49,8 +49,11 @@ class ViewController: UIViewController {
         // Wire up the nibButton to point to a function in this ViewController
         let nibButton = nibView.subviews[0].subviews[1] as! UIButton
         nibButton.tag = nextPersonIndex
-        nibButton.addTarget(self, action: #selector(happyBirthdayPushed(_:)), for: .touchUpInside)
         // {{## END configureNibControls ##}}
+
+        // {{## START wiring ##}}
+        nibButton.addTarget(self, action: #selector(happyBirthdayPushed(_:)), for: .touchUpInside)
+        // {{## END wiring ##}}
 
         // {{## START addNibViews ##}}
         // Add the subview but use the "arranged" version so that it will be arranged according to the rules of a UIStackView

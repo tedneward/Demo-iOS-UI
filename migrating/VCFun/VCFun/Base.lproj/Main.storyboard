@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VCFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="EI0-vS-ruP">
+                                <rect key="frame" x="20" y="44" width="374" height="798"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-bX-9ub">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="159.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lifecycles"/>
+                                        <connections>
+                                            <segue destination="vpt-hx-vD7" kind="show" id="kTH-Ui-nt6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K33-Sh-Bq3">
+                                        <rect key="frame" x="0.0" y="159.5" width="65" height="159.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Segue"/>
+                                        <connections>
+                                            <segue destination="2gr-xS-zIH" kind="show" id="ucQ-D0-5J1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-ie-KAj">
+                                        <rect key="frame" x="0.0" y="319" width="167.5" height="160"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Storyboard.instantiate"/>
+                                        <connections>
+                                            <action selector="onStoryboardInstantiate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eky-L3-EdT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdW-5n-vjc">
+                                        <rect key="frame" x="0.0" y="479" width="164" height="159.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Secondary.instantiate"/>
+                                        <connections>
+                                            <action selector="onLaunchScreenInstantiate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vfc-bI-6RN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-Kj-GYe">
+                                        <rect key="frame" x="0.0" y="638.5" width="74" height="159.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Scratch"/>
+                                        <connections>
+                                            <action selector="onScratch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ge5-Bw-BpH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EI0-vS-ruP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2dw-Tf-SDZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EI0-vS-ruP" secondAttribute="trailing" constant="20" id="Fpg-ca-ngV"/>
+                            <constraint firstItem="EI0-vS-ruP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fn2-tw-WS2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EI0-vS-ruP" secondAttribute="bottom" constant="20" id="mIt-Y7-6if"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="117"/>
+        </scene>
+        <!--Lifecycle View Controller-->
+        <scene sceneID="KPt-AU-jR5">
+            <objects>
+                <viewController id="vpt-hx-vD7" customClass="LifecycleViewController" customModule="VCFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AQj-Jn-cSW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-b2-xyp">
+                                <rect key="frame" x="169.5" y="405.5" width="75" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
+                                <connections>
+                                    <action selector="onDismiss:" destination="vpt-hx-vD7" eventType="touchUpInside" id="22z-9v-Pxz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qag-7x-j9H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBO-b2-xyp" firstAttribute="centerX" secondItem="AQj-Jn-cSW" secondAttribute="centerX" id="EMD-bz-FFR"/>
+                            <constraint firstItem="gBO-b2-xyp" firstAttribute="centerY" secondItem="AQj-Jn-cSW" secondAttribute="centerY" id="sQx-rU-ZaS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HuW-3K-nR2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEY-A9-5Us" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-565"/>
+        </scene>
+        <!--Dismiss View Controller-->
+        <scene sceneID="PdI-BJ-Vvl">
+            <objects>
+                <viewController storyboardIdentifier="instantiate" id="2gr-xS-zIH" customClass="DismissViewController" customModule="VCFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YKp-OS-OIr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGH-J8-e87">
+                                <rect key="frame" x="170" y="405.5" width="74.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dismiss"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX5-3q-Vmq">
+                                <rect key="frame" x="40" y="108" width="334" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ThT-rA-pzt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtt-0e-8NI">
+                                <rect key="frame" x="157" y="444" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2HW-Uu-t59"/>
+                                    <constraint firstAttribute="height" constant="21" id="Za3-De-4yN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Unwind"/>
+                                <connections>
+                                    <segue destination="K0T-2S-XvM" kind="unwind" unwindAction="unwoundWithUnwindSegue:" id="P6z-bm-SSt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UzO-jN-rJO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xX5-3q-Vmq" firstAttribute="leading" secondItem="YKp-OS-OIr" secondAttribute="leadingMargin" constant="20" id="BVm-fQ-Jqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xX5-3q-Vmq" secondAttribute="trailing" constant="20" id="Ma7-sr-Q2v"/>
+                            <constraint firstItem="xX5-3q-Vmq" firstAttribute="top" secondItem="YKp-OS-OIr" secondAttribute="topMargin" constant="64" id="VGh-Ja-TXe"/>
+                            <constraint firstItem="Jtt-0e-8NI" firstAttribute="top" secondItem="GGH-J8-e87" secondAttribute="bottom" constant="7.5" id="W5R-iz-fop"/>
+                            <constraint firstItem="GGH-J8-e87" firstAttribute="centerY" secondItem="YKp-OS-OIr" secondAttribute="centerY" id="cSg-xx-VUv"/>
+                            <constraint firstItem="GGH-J8-e87" firstAttribute="centerX" secondItem="YKp-OS-OIr" secondAttribute="centerX" id="j4n-bI-FXc"/>
+                            <constraint firstItem="Jtt-0e-8NI" firstAttribute="centerX" secondItem="GGH-J8-e87" secondAttribute="centerX" id="pqZ-xA-jST"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l7C-Gy-2f6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77n-Zd-G01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="K0T-2S-XvM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="-323.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

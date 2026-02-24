@@ -8,9 +8,11 @@
 import UIKit
 
 /*
-This could be generalized further by taking an array of strings in an initializer
-and using that instead of the fixed array listed here, but that's an enhancement
-that doesn't really add much to the demo code. For production purposes, though, it's
+This could be generalized further by taking an
+array of strings in an initializer and using that
+instead of the fixed array listed here, but that's
+an enhancement that doesn't really add much to
+the demo code. For production purposes, though, it's
 absolutely an enhancement I'd suggest.
  */
 class StringPickerModel : NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
